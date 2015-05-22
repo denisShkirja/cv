@@ -1,0 +1,132 @@
+\documentclass[11pt,a4paper,russian]{moderncv}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+\moderncvstyle{classic}
+\moderncvcolor{purple}
+
+\usepackage[unicode]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\name{Шкиря}{Денис}
+\address{}{Санкт-Петербург, Россия}
+\phone[mobile]{8 911 987 0340}
+\email{denis.shkirja@gmail.com}
+\social[github]{denisShkirja}
+\extrainfo{Дата рождения: 24 марта 1991}
+
+\begin{document}
+\makecvtitle
+
+\section{Цель}
+\cvitem
+    {}
+    {Работа программистом С/С++ в продуктовой компании с налаженным процессом
+    разработки.}
+
+\section{Образование}
+    \cventry
+        {Сентябрь 2007 -- Сентябрь 2012}
+        {Комплексное обеспечение информационной безопасности автоматизированных систем}
+        {\newline Санкт-Петербургский государственный политехнический университет,
+        Факультет технической кибернетики, кафедра ИБКС}
+        {}
+        {Специалист}
+        {}
+    \subsection{Дипломная работа}
+        \cvitem{Название}{\emph{Интеграция криптопровайдера в продукты MS Office}}
+        \cvitem{Руководитель}{Зегжда Дмитрий Петрович}
+        \cvitem{Описание}{Целью работы была разработка криптопровайдера (CSP), на базе
+            которого можно было бы сгенерировать самоподписанный сертификат
+            стандартными утилитами Windows. Кроме того, нужно было научиться добавлять в
+            документы MS Office электронную подпись, сгенерированную на основе полученного
+            сертификата.}
+
+\section{Опыт работы}
+    \cventry
+        {Июнь 2010 -- Настоящее время}
+        {Программист С/C++}
+        {Необит}
+        {Санкт-Петербург}
+        {}
+        {До июня 2012 года работал на неполной ставке.
+        \newline Основной язык - C, дополнительные - C++, asm x86, bash, C\#.\newline{}%
+            Задачи:%
+            \begin{itemize}%
+            \item Разработка тонкого гипервизора на основе технологий
+                аппаратной виртуализации (VT-x, SVM).
+                \begin{itemize}
+                \item Корректная загрузка гостевых ОС парарельно с работой
+                    гипервизора.
+                \item Вложенная аппаратная виртуализация VT-x.
+                \item Взаимодействие с гостевой ОС (Windows).
+                \item Эмуляция инструкций.
+                \end{itemize}
+            \item Разработка микроядерной ОС 'Фебос'.
+                \begin{itemize}%
+                \item Начальный этап загрузки.
+                \item Поиск и исправление ошибок в гипервизоре и эмуляторах
+                    устройств при запуске гостевых ОС.
+                \item Профайлинг ядра.
+                \end{itemize}
+            \item Подготовка заданий для очных и заочных туров NeoQUEST.
+                \begin{itemize}%
+                \item К заданиям писались прохождения и выкладывались в виде
+                    статей в блоге компании на Habrahabr.ru.
+                \end{itemize}
+            \item Разработка прототипа криптопровайдера (CSP).
+            \item Модификация кода VirtualBox для взаимодействия с драйвером
+                гостевой ОС со стороны хоста.
+            \end{itemize}
+        }
+    \cventry
+        {Сентябрь 2008 -- Февраль 2011}
+        {Удаленный тестировщик}
+        {LGPolyREC}
+        {Санкт-Петербург}
+        {}
+        {Из Питерского офиса LG раз в две недели (иногда реже) присылали
+        документ с тест-кейсами и приложение для тестирования. Иногда для
+        тестирования использовался предоставленный ими телефон.}
+
+\section{Languages}
+\cvitemwithcomment{Английский}{Читаю технические тексты}{}
+\cvitemwithcomment{Русский}{Родной}{}
+
+\section{Ключевые навыки}
+\cvitem
+    {Высокий уровень}
+    {C}
+\cvitem
+    {Средний уровень}
+    {Архитектура x86, C++, VT-x, gdb}
+\cvitem
+    {Базовый уровень}
+    {Bash, Makefile, asm x86}
+
+\section{Навыки использования ПО}
+\cvitem
+    {OS}
+    {Linux (Arch, Ubuntu), Windows}
+\cvitem
+    {IDE/Editors}
+    {Vim, VisualStudio}
+\cvitem
+    {VCS}
+    {Git}
+
+\section{Публичная активность}
+    \cvitem{Habrahabr}{\url{http://habrahabr.ru/users/drnkrq} \newline
+        Несколько статей в блоге компании были написаны мной:
+        \begin{itemize}
+        \item \url{http://habrahabr.ru/company/neobit/blog/173263}
+        \item \url{http://habrahabr.ru/company/neobit/blog/211470}
+        \item \url{http://habrahabr.ru/company/neobit/blog/203706}
+        \item \url{http://habrahabr.ru/company/neobit/blog/197912}
+        \end{itemize}
+    }
+    \cvitem{GitHub}{\url{https://github.com/denisShkirja}}
+
+\end{document}

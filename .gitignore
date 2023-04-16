@@ -1,5 +1,13 @@
+# general latex build output files
 *.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
 *.log
 *.out
-*.dvi
+*.synctex.gz
+*.xdv
+
+# result output
 *.pdf

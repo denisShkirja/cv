@@ -1,0 +1,35 @@
+name: Build cv
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  registry_package:
+
+jobs:
+  build-cv:
+    name: Build cv
+    runs-on: ubuntu-latest
+    container:
+      image: thomasweise/docker-texlive-full:latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build pdf
+        run: latexmk -pdflua ./denis_shkiria_cv.tex
+
+      - name: Upload pdf
+        uses: actions/upload-artifact@v2
+        with:
+          name: denis_shkiria_cv.pdf
+          path: ./denis_shkiria_cv.pdf
+
+      - name: Upload log
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: denis_shkiria_cv.log
+          path: ./denis_shkiria_cv.log

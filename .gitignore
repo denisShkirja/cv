@@ -2,5 +2,4 @@
 *.log
 *.out
 *.dvi
-Session.vim
-moderncv/
+*.pdf
